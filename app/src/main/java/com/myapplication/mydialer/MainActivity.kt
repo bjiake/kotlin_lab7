@@ -128,6 +128,7 @@ class MainActivity : AppCompatActivity() {
 
         val phonesType = object : TypeToken<List<Contact>>() {}.type
         val phones = Gson().fromJson<List<Contact>>(phones, phonesType)
+        adapter.submitList(phones)
         searchEditText.addTextChangedListener {
             val filteredPhones = phones.filter { item ->
                 item.phone.contains(it.toString()) || item.name.contains(it.toString()) || item.type.contains(it.toString())
