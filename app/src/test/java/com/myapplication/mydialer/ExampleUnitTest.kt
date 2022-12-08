@@ -1,4 +1,4 @@
-package com.sergey.mydialer
+package com.myapplication.mydialer
 
 import org.junit.Test
 

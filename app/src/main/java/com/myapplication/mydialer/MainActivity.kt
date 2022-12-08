@@ -1,4 +1,4 @@
-package com.sergey.mydialer
+package com.myapplication.mydialer
 
 import android.content.Intent
 import android.net.Uri
@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.sergey.mydialer.R
 
 class MainActivity : AppCompatActivity() {
     private val phones = "[\n" +

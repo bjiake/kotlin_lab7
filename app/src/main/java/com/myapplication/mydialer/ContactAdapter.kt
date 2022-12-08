@@ -1,12 +1,12 @@
-package com.sergey.mydialer
+package com.myapplication.mydialer
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.sergey.mydialer.R
 
 class ContactAdapter(private val callback: (String) -> Unit) : ListAdapter<Contact, ContactViewHolder>(ContactDiffCallback()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
